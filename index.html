@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen flex justify-center items-center bg-very-dark-blue">
+  <main class="w-60 sm:w-80 border border-dark-blue bg-gradient-to-b from-dark-blue to-very-dark-blue rounded-2xl p-6">
+    <section id="first-step" class="flex flex-col gap-5">
+      <div class="flex justify-center items-center w-10 h-10 rounded-full bg-very-dark-blue">
+        <img src="/images/icon-star.svg" alt="" srcset="">
+      </div>
+      <h2 class="text-white-666 font-bold text-2xl">How did we do?</h2>
+      <p class="text-light-grey text-sm">Please let us know how we did with your support request. All feedback is
+        appreciated to
+        help us improve our
+        offering!</p>
+      <div class="flex justify-between">
+        <button class="btn-number sm:w-10 sm:h-10" type="button">1</button>
+        <button class="btn-number sm:w-10 sm:h-10" type="button">2</button>
+        <button class="btn-number sm:w-10 sm:h-10" type="button">3</button>
+        <button class="btn-number sm:w-10 sm:h-10" type="button">4</button>
+        <button class="btn-number sm:w-10 sm:h-10" type="button">5</button>
+      </div>
+      <button id="btn-first-step" class="btn-submit" type="button">SUBMIT</button>
+    </section>
+    <section id="second-step" class="hidden flex-col items-center gap-5">
+      <div class="flex justify-center items-center">
+        <img src="/images/illustration-thank-you.svg" alt="" srcset="">
+      </div>
+      <p id="message-second-step" class="flex w-fit bg-dark-blue text-orange-666 rounded-2xl px-4 py-1 text-sm"></p>
+      <h2 class="text-white-666 text-2xl">Thank you!</h2>
+      <p class="text-center text-light-grey text-sm">We appreciate you taking the time to give a rating. If you ever
+        need more support, don’t hesitate to get in touch!</p>
+    </section>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

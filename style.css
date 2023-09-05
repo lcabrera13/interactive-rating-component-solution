@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Overpass', sans-serif;
+    }
+}
+
+@layer components {
+    .btn-number {
+        @apply flex justify-center items-center w-8 h-8 rounded-full bg-very-dark-blue text-light-grey text-sm leading-6 transition delay-75;
+
+    }
+
+    .btn-number:hover {
+        @apply bg-orange-666 text-white-666;
+    }
+
+    .btn-number.active {
+        @apply bg-light-grey text-white-666;
+    }
+
+    .btn-submit {
+        @apply bg-orange-666 text-white-666 font-bold tracking-wider w-full rounded-2xl py-2 text-sm transition delay-75;
+    }
+
+    .btn-submit:hover {
+        @apply bg-white-666 text-orange-666;
+    }
+}
